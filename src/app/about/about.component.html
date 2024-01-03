@@ -1,23 +1,60 @@
-<div class="container">
-    <h3 cass="text-center text-black">About</h3>
+<section>
+<div class="container ">
+  <h3 cass="text-center text-black">About</h3>
 </div>
 
-
-
-<div class="container">
-    <h1 class="text-center pb-4">Users</h1>
-        <div  *ngIf="users" class="pt-4">    
-          <div >
-              <div class="row  g-4">
-                <div class="col-lg-4" *ngFor="let user of users.data">
-                      <div class="card h-100">
-                        <img [src]="user.avatar" class="card-img-top" alt="..." width="140" height="140">
-                        <div class="card-body">
-                          <h5 class="card-title text-center card-text">{{ user.first_name }} {{ user.last_name }}</h5>
-                        </div>
-                      </div>
-                </div>
-              </div>
-          </div>    
+<!-- Testimonials -->
+<section id="testimonials" class="testimonials  py-6">
+  <div id="testimonialCarousel" class="carousel slide">
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="d-flex flex-column justify-content-center align-items-center text-center">
+          <img src="images/testimonial-1.jpg" alt="" class="rounded-circle" width="120"/>
+          <p class="w-50 my-4 fst-italic fs-4 mb-4">
+            “Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deserunt adipisci corporis vero eligendi delectus, nulla alias beatae autem quaerat praesentium ducimus consequatur odio aut.”
+          </p>
+          <div class="fw-bold fs-5 mt-4">Marlene Visconte</div>
+          <div>General Manager - Scouter</div>
         </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="d-flex flex-column justify-content-center align-items-center text-center">
+          <img src="images/testimonial-2.jpg" alt="" class="rounded-circle" width="120"/>
+          <p class="w-50 my-4 fst-italic fs-4 mb-4">
+            “Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deserunt adipisci corporis vero eligendi delectus, nulla alias beatae autem quaerat praesentium ducimus consequatur odio aut.”
+          </p>
+          <div class="fw-bold fs-5 mt-4">John Spiker</div>
+          <div>Team Leader - Vanquish</div>
+        </div>
+      </div>
+      <!-- Slide 1 -->
+      <div class="carousel-item">
+        <div class="d-flex flex-column justify-content-center align-items-center text-center">
+          <img src="images/testimonial-3.jpg" alt="" class="rounded-circle"  width="120" />
+          <p class="w-50 my-4 fst-italic fs-4 mb-4">
+            “Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deserunt adipisci corporis vero eligendi delectus, nulla alias beatae autem quaerat praesentium ducimus consequatur odio aut.”
+          </p>
+          <div class="fw-bold fs-5 mt-4">Stella Virtuoso</div>
+          <div>Design Chief - Bikegirl</div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"  type="button"  data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+      <!-- <i class="fas fa-arrow-circle-left fa-3x text-secondary"></i> -->
+      Prev
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#testimonialCarousel"
+      data-bs-slide="next">
+      <!-- <i class="fas fa-arrow-circle-right fa-3x text-secondary"></i> -->
+      Next
+    </button>
   </div>
+</section>
+</section>
