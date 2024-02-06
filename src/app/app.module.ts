@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { FaqsComponent } from './faqs/faqs.component';
+import { LeapYearCheckerComponent } from './leap-year-checker/leap-year-checker.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { FaqsComponent } from './faqs/faqs.component';
     AboutComponent,
     NotfoundComponent,
     FaqsComponent,
+    LeapYearCheckerComponent,
   
   ],
   imports: [
